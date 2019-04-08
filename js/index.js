@@ -51,30 +51,51 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
   middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 // Adding nav bar 
-
 // Adding a variable so I can select and assign multiple nav items 
 const navItems = document.querySelectorAll('nav a'); 
  
 const navitem1 = navItems[0]; 
-navitem1.setAttribute('src', siteContent["nav"]["nav-item-1"]);
 navitem1.innerText = siteContent["nav"]["nav-item-1"]; 
 
  const navitem2 = navItems[1]; 
- navitem2.setAttribute('src', siteContent["nav"]["nav-item-2"]);
  navitem2.innerText = siteContent["nav"]["nav-item-2"];   
 
  const navitem3 = navItems[2]; 
- navitem3.setAttribute('src', siteContent["nav"]["nav-item-3"]); 
  navitem3.innerText = siteContent["nav"]["nav-item-3"]; 
 
  const navitem4 = navItems[3]; 
- navitem4.setAttribute('src', siteContent["nav"]["nav-item-4"]); 
  navitem4.innerText = siteContent["nav"]["nav-item-4"]; 
 
  const navitem5 = navItems[4]; 
- navitem5.setAttribute('src', siteContent["nav"]["nav-item-5"]); 
  navitem5.innerText = siteContent["nav"]["nav-item-5"]; 
 
  const navitem6 = navItems[5]; 
- navitem6.setAttribute('src', siteContent["nav"]["nav-item-6"]);
  navitem6.innerText = siteContent["nav"]["nav-item-6"];  
+
+// CTA, adding H1 
+const ctaText = document.querySelector('.cta-text h1'); 
+ctaText.innerText = siteContent["cta"]["h1"]; 
+
+// CTA, adding button for Get Started 
+ const ctaButton = document.querySelector('.cta-text button'); 
+ ctaButton.innerText = siteContent["cta"]["button"];
+
+ // Main content 
+
+ // Top content 
+
+ const headings = document.querySelectorAll('h4'); 
+ headings[0].innerText = siteContent['main-content']['features-h4']; 
+ headings[1].innerText = siteContent['main-content']['about-h4']; 
+ headings[2].innerText = siteContent['main-content']['services-h4']; 
+ headings[3].innerText = siteContent['main-content']['product-h4']; 
+ headings[4].innerText = siteContent['main-content']['vision-h4']; 
+
+ const mainInfo = document.querySelectorAll('p'); 
+ mainInfo[0].innerText = siteContent['main-content']['features-content']; 
+ mainInfo[1].innerText = siteContent['main-content']['about-content']; 
+ mainInfo[2].innerText = siteContent['main-content']['services-content']; 
+ mainInfo[3].innerText = siteContent['main-content']['product-content']; 
+ mainInfo[4].innerText = siteContent['main-content']['vision-content']; 
+
+
