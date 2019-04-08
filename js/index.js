@@ -88,6 +88,7 @@ const navItems = document.querySelectorAll('nav a');
     // Adding the text to the new a Element 
     addedNav1.appendChild(addedNavText); 
     addedNav1.style.padding = "0 0 0 45px"; 
+    addedNav1.style.color = "blue"; 
 
     // Adding to the nav bar 
     navitem6.appendChild(addedNav1); 
@@ -98,6 +99,7 @@ const navItems = document.querySelectorAll('nav a');
     // Adding the text to the new a Element 
     addedNav2.appendChild(addedNavText2); 
     addedNav2.style.padding = "0 45px 0 0"; 
+    addedNav2.style.color = "blue"; 
 
 
     // Adding to the nav bar 
