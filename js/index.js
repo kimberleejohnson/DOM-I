@@ -80,9 +80,7 @@ ctaText.innerText = siteContent["cta"]["h1"];
  const ctaButton = document.querySelector('.cta-text button'); 
  ctaButton.innerText = siteContent["cta"]["button"];
 
- // Main content 
-
- // Top content 
+// Main content section 
 
  const headings = document.querySelectorAll('h4'); 
  headings[0].innerText = siteContent['main-content']['features-h4']; 
@@ -97,5 +95,21 @@ ctaText.innerText = siteContent["cta"]["h1"];
  mainInfo[2].innerText = siteContent['main-content']['services-content']; 
  mainInfo[3].innerText = siteContent['main-content']['product-content']; 
  mainInfo[4].innerText = siteContent['main-content']['vision-content']; 
+
+// Contact section 
+const contactHeading= document.querySelector('.contact h4'); 
+contactHeading.innerText = siteContent['contact']['contact-h4'];
+
+const contactdetails = document.querySelectorAll('.contact p'); 
+contactdetails[0].innerText = siteContent['contact']['address']; 
+contactdetails[1].innerText = siteContent['contact']['phone']; 
+contactdetails[2].innerText = siteContent['contact']['email'];
+
+// Footer 
+const footer = document.querySelector('footer'); 
+footer.innerText = siteContent['footer']['copyright']; 
+
+
+
 
 
