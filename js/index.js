@@ -118,6 +118,14 @@ ctaText.innerText = siteContent["cta"]["h1"];
  const ctaButton = document.querySelector('.cta-text button'); 
  ctaButton.innerText = siteContent["cta"]["button"];
 
+ // Adding Event Listener 
+ ctaButton.addEventListener('click', buttonStyle); 
+
+// Callback function 
+ function buttonStyle() {
+    ctaButton.style.color = 'red'; 
+ }
+
 // Main content section 
 
  const headings = document.querySelectorAll('h4'); 
