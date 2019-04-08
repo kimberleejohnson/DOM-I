@@ -87,6 +87,7 @@ const navItems = document.querySelectorAll('nav a');
     const addedNavText = document.createTextNode('New nav'); 
     // Adding the text to the new a Element 
     addedNav1.appendChild(addedNavText); 
+    addedNav1.style.padding = "0 0 0 45px"; 
 
     // Adding to the nav bar 
     navitem6.appendChild(addedNav1); 
@@ -96,9 +97,12 @@ const navItems = document.querySelectorAll('nav a');
     const addedNavText2 = document.createTextNode('Other new nav'); 
     // Adding the text to the new a Element 
     addedNav2.appendChild(addedNavText2); 
+    addedNav2.style.padding = "0 45px 0 0"; 
+
 
     // Adding to the nav bar 
     navitem1.prepend(addedNav2);
+
 
 
  
