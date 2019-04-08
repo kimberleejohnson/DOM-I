@@ -106,10 +106,6 @@ const navItems = document.querySelectorAll('nav a');
     navitem1.prepend(addedNav2);
 
 
-
- 
-
-
 // CTA, adding H1 
 const ctaText = document.querySelector('.cta-text h1'); 
 ctaText.innerText = siteContent["cta"]["h1"]; 
@@ -119,11 +115,14 @@ ctaText.innerText = siteContent["cta"]["h1"];
  ctaButton.innerText = siteContent["cta"]["button"];
 
  // Adding Event Listener 
- ctaButton.addEventListener('click', buttonStyle); 
+//  ctaButton.addEventListener('click', buttonStyle); 
+
+ // Refactoring code to better make use of Event Object 
+ ctaButton.addEventListener('click', buttonStyle);
 
 // Callback function 
  function buttonStyle() {
-    ctaButton.style.color = 'red'; 
+    event.target.style.color = 'red'; 
  }
 
 // Main content section 
