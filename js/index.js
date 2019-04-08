@@ -57,6 +57,7 @@ const navItems = document.querySelectorAll('nav a');
  
   const navitem1 = navItems[0]; 
   navitem1.innerText = siteContent["nav"]["nav-item-1"]; 
+  // Setting color to each individual item 
   navitem1.style.color = 'green'; 
 
   const navitem2 = navItems[1]; 
@@ -79,6 +80,28 @@ const navItems = document.querySelectorAll('nav a');
   navitem6.innerText = siteContent["nav"]["nav-item-6"];  
   navitem6.style.color = 'green';
 
+  // Adding new nav items 
+
+  // Append 
+    const addedNav1 = document.createElement('a'); 
+    const addedNavText = document.createTextNode('New nav'); 
+    // Adding the text to the new a Element 
+    addedNav1.appendChild(addedNavText); 
+
+    // Adding to the nav bar 
+    navitem6.appendChild(addedNav1); 
+
+  // Prepend 
+    const addedNav2 = document.createElement('a'); 
+    const addedNavText2 = document.createTextNode('Other new nav'); 
+    // Adding the text to the new a Element 
+    addedNav2.appendChild(addedNavText2); 
+
+    // Adding to the nav bar 
+    navitem1.prepend(addedNav2);
+
+
+ 
 
 
 // CTA, adding H1 
